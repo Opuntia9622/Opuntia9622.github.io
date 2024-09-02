@@ -1,0 +1,45 @@
+name: Generate Hexo pages
+
+on: [push]
+
+permissions:
+  write-all
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with: 
+          path: website
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+      - name: Build
+        working-directory: website
+        run: |
+          find source -name "*.md" -exec sed -i 's/\t/    /g' {} \;
+          npx hexo clean
+          npx hexo generate
+          node auto-generate-issue.js ${{ secrets.GITHUB_TOKEN }}
+          mv img public
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with: 
+          path: website/public
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
