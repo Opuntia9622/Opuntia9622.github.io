@@ -11,7 +11,7 @@ categories:
 
 首先有显然的 dp 式子：$f(i)=\min \{f(j) \times \max\{a_{j+1},\dots,a_i\}\}$。考虑怎么去优化它。
 
-有显然的 $\mathcal O(n\log n)$：考虑线段树优化 dp。用增的单调栈维护 $a$，若每次弹出顶部一个下标 $p$，则 $[p+1,i]$ 的 $\max$ 都被推平成 $a_i$，栈维护一下 $\max$ 连续段，于是问题变成区间加。分析一下连续段个数是 $\mathcal O(n)$ 的。
+有显然的 $O(n\log n)$：考虑线段树优化 dp。用增的单调栈维护 $a$，若每次弹出顶部一个下标 $p$，则 $[p+1,i]$ 的 $\max$ 都被推平成 $a_i$，栈维护一下 $\max$ 连续段，于是问题变成区间加。分析一下连续段个数是 $O(n)$ 的。
 
 <details><summary>Code（这份代码 5e5 的包 WA 了，但大致思路可以参考一下）</summary>
 
@@ -86,7 +86,7 @@ signed main() {
 
 观察复杂度瓶颈在于可删堆的求 $\min$。注意到可删堆内的元素其实是在一段窗口里，所以有人类智慧的思考：考虑基于一个点 $p$，每次重构时预处理出它到两边的前缀 / 后缀 $\min$，每次查询的时候是可以将两段拼起来。当窗口内不包含 $p$ 时，就取 $p$ 为当前窗口中点重构即可。
 
-分析一下复杂度：如果右端点不扩，势能是不断减小的，即 $\mathcal O(len+\dfrac{len}{2}+\dfrac{len}{4}+...)=\mathcal O(len)$，由于右端点往右扩是均摊 $\mathcal O(n)$ 的，所以复杂度即为 $\mathcal O(\sum len)=\mathcal O(n)$。
+分析一下复杂度：如果右端点不扩，势能是不断减小的，即 $O(\mathrm{len}+\dfrac{\mathrm{len}}{2}+\dfrac{\mathrm{len}}{4}+...)=O(\mathrm{len})$，由于右端点往右扩是均摊 $O(n)$ 的，所以复杂度即为 $O(\sum \mathrm{len})=O(n)$。
 
 <details><summary>Code</summary>
 
@@ -152,6 +152,7 @@ signed main() {
 ```
 
 </details>
+
 
 
 
