@@ -2,7 +2,7 @@
 title: 【题解】CatOJ C0458C baka's trick
 date: 2024-09-03
 categories: 
-- OI
+
 ---
 
 标题 trick 的名字我也不知道是什么，就这样吧。
@@ -152,5 +152,6 @@ signed main() {
 ```
 
 </details>
+
 
 
