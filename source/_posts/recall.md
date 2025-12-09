@@ -25,7 +25,7 @@ $A$ 查询区间和：$O(\dfrac{qn}{w}+q{S_2})=O(\dfrac{qn}{w})$。
 
 所以复杂度就是：$O(\dfrac{qn}{w}\log w)$。可过。
 
-<details><summary>Code（超级无敌炫酷牛逼元神大王好写）</summary>
+:::info[Code（超级无敌炫酷牛逼元神大王好写）]
 
 ```cpp
 #include <bits/stdc++.h>
@@ -146,6 +146,6 @@ signed main() {
     return 0;
 }
 ```
-</details>
+:::
 
 已经没有写题解的耐心了。
