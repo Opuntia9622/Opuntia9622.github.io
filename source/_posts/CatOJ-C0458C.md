@@ -80,7 +80,7 @@ signed main() {
 
 </details>
 
-<br>
+<span style="display:block; line-height:0.3;">&nbsp;</span>
 
 进阶一下，上面的线段树优化 dp 可以每次修改的都是一个后缀，可以用可删堆维护 $\min$，定期弹出过期元素即可。
 
@@ -154,6 +154,7 @@ signed main() {
 ```
 
 </details>
+
 
 
 
