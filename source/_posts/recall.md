@@ -149,6 +149,4 @@ signed main() {
 
 </details>
 
-<br>
-
 已经没有写题解的耐心了。
