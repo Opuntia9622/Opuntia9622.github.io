@@ -1,5 +1,5 @@
 ---
-title: 【题解】CatOJ C0458C baka's trick
+title: baka's trick | CatOJ C0458C
 date: 2024-09-03
 categories: 
 
@@ -154,6 +154,7 @@ signed main() {
 ```
 
 </details>
+
 
 
 
