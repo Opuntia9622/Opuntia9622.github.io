@@ -15,19 +15,19 @@ categories:
 
 [提交记录](https://atcoder.jp/contests/arc165/submissions/45767682)。
 
-### $\color{green}\text{ARC166C}$ $\text{*1813}$
+### $\color{green}{\text{ARC166C}}$ $\text{*1813}$
 
 可以按着斜着的轮廓拆出 $\min(n,m)$ 条阶梯状的链。发现每条链计数互不影响，将方案乘起来即可。每条链跑一个形如 $n$ 个数中不能取相邻的数的方案数的 dp 状物，即为这条链的方案数。发现 $n$ 条链各个链的长度是有规律可循的，于是可以做前缀积和快速幂来做到 $\mathcal O(Tn\log n)$。
 
 [提交记录](https://atcoder.jp/contests/arc166/submissions/48966439)。
 
-### $\color{green}\text{ARC166D}$ $\text{*2192}$
+### $\color{green}{\text{ARC166D}}$ $\text{*2192}$
 
 可以从前往后贪心，拿一个队列维护一下当前没有固定出右端点的左端点，动态维护一下即可。
 
 [提交记录](https://atcoder.jp/contests/arc166/submissions/48968424)。
 
-### $\color{green}\text{ARC169C}$ $\text{*2005}$
+### $\color{green}{\text{ARC169C}}$ $\text{*2005}$
 
 和前面几道相比，这题比较简单。
 
@@ -35,7 +35,7 @@ categories:
 
 [提交记录](https://atcoder.jp/contests/arc169/submissions/48988048)。
 
-### $\color{blue}\text{ARC168C}$ $\text{*2071}$
+### $\color{blue}{\text{ARC168C}}$ $\text{*2071}$
 
 有难度的。
 
@@ -45,7 +45,7 @@ categories:
 
 [提交记录](https://atcoder.jp/contests/arc168/submissions/48994536)。
 
-### $\color{green}\text{ARC167D}$ $\text{*2313}$
+### $\color{green}{\text{ARC167D}}$ $\text{*2313}$
 
 又是简单题。
 
@@ -53,13 +53,13 @@ categories:
 
 [提交记录](https://atcoder.jp/contests/arc167/submissions/48995199)。
 
-### $\color{green}\text{ARC168D}$ $\text{*2440}$
+### $\color{green}{\text{ARC168D}}$ $\text{*2440}$
 
 考虑区间 dp。设 $f(i,j)$ 表示序列中 $[i,j]$ 填满，其他地方不填的最大操作次数。可以通过前缀和优化做到三方。
 
 [提交记录](https://atcoder.jp/contests/arc168/submissions/48996449)。
 
-### $\color{blue}\text{ARC167C}$ $\text{*2338}$
+### $\color{blue}{\text{ARC167C}}$ $\text{*2338}$
 
 计数仍需加训。
 
