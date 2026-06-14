@@ -9,7 +9,7 @@ categories:
 
 绿为独立做出来，蓝为比较会，讨论或看了题解做出来，红为完全不会。
 
-### $\color{blue}\text{ARC165D}$ $\text{*2589}$
+### $\color{blue}{\text{ARC165D}}$ $\text{*2589}$
 
 可以跑 $n$ 次 tarjan，同时拿并查集维护两个点值是否相同，每次 tarjan 完了之后同一个强连通分量里的就合并。tarjan 连边就是需要字典序小的往大的连边。
 
