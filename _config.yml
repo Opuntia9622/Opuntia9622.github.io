@@ -108,4 +108,4 @@ deploy:
 math:
   engine: 'mathjax'
   mathjax:
-    src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS_CHTML
+    src: https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js?config=TeX-AMS-MML_SVG
