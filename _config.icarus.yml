@@ -1,0 +1,28 @@
+version: 5.1.0
+variant: default
+
+logo:
+  text: Opuntia9622
+
+head:
+  favicon: /favicon.ico
+
+navbar:
+  menu:
+    Home: /
+    Archives: /archives
+    Categories: /categories
+    Tags: /tags
+
+article:
+  highlight:
+    theme: atom-one-light
+    clipboard: true
+    fold: unfolded
+  readtime: true
+  update_time: auto
+
+widgets: []
+
+plugins:
+  back_to_top: true
